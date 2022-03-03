@@ -3,18 +3,24 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { useFonts, Inter_900Black } from '@expo-google-fonts/inter'
+import tw from 'twrnc'
 
 function HomeScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Home Screen</Text>
+    <View style={tw`flex flex-row justify-center`}>
+      <View style={tw`p-2 m-6 text-center`}>
+        <Text>Home Screen</Text>
+      </View>
+      <View style={tw`p-2 m-6 text-center`}>
+        <Text>Home Screen</Text>
+      </View>
     </View>
   )
 }
 
 function AnotherScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Another Screen</Text>
     </View>
   )
